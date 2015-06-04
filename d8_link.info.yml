@@ -1,0 +1,4 @@
+name: Drupal 8 Link CSS
+description: 'Changes CSS @imports to <link> statements.'
+type: module
+core: 8.x

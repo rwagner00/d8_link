@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * @file
+ * Changes @import to <link> for CSS sheets on a page.
+ */
+
+
+/**
+ * Implements hook_css_alter().
+ */
+function d8_link_css_alter(array &$css, \Drupal\Core\Asset\AttachedAssetsInterface $assets) {
+  foreach ($css as $key => $value) {
+      $css[$key]['preprocess'] = FALSE;
+  }
+}
